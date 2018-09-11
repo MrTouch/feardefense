@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571334, b: 0.3069219, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2873,7 +2873,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &135129287
 Transform:
   m_ObjectHideFlags: 0
@@ -6247,7 +6247,7 @@ MonoBehaviour:
   validDrop: 1
   grabOverrideButton: 0
   allowedGrabControllers: 0
-  grabAttachMechanicScript: {fileID: 0}
+  grabAttachMechanicScript: {fileID: 298968620}
   secondaryGrabActionScript: {fileID: 0}
   isUsable: 0
   holdButtonToUse: 1
@@ -6274,7 +6274,7 @@ MonoBehaviour:
   throwMultiplier: 1
   onGrabCollisionDelay: 0
   destroyImmediatelyOnThrow: 1
-  breakForce: 1e+12
+  breakForce: 1500
 --- !u!1 &299256596
 GameObject:
   m_ObjectHideFlags: 0
@@ -8732,15 +8732,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4276708578382792, guid: 68ad181338cd91a4b96aac1912ad4ed5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.031
+      value: 0.7140001
       objectReference: {fileID: 0}
     - target: {fileID: 4276708578382792, guid: 68ad181338cd91a4b96aac1912ad4ed5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.635
+      value: 1.195
       objectReference: {fileID: 0}
     - target: {fileID: 4276708578382792, guid: 68ad181338cd91a4b96aac1912ad4ed5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.222
+      value: 0.2000001
       objectReference: {fileID: 0}
     - target: {fileID: 4276708578382792, guid: 68ad181338cd91a4b96aac1912ad4ed5, type: 2}
       propertyPath: m_LocalRotation.x
@@ -10118,7 +10118,7 @@ Transform:
   - {fileID: 1835569287}
   - {fileID: 77235233}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &496206286
 GameObject:
@@ -13236,6 +13236,7 @@ GameObject:
   - component: {fileID: 626148833}
   - component: {fileID: 626148832}
   - component: {fileID: 626148831}
+  - component: {fileID: 626148836}
   m_Layer: 0
   m_Name: SnapDropZone
   m_TagString: Untagged
@@ -13251,7 +13252,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 626148829}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.032, y: 0.622, z: 0.085}
+  m_LocalPosition: {x: 0.032, y: 0.653, z: 0.067}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 64778047}
@@ -13287,12 +13288,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightObjectPrefab: {fileID: 837886320}
-  snapType: 0
+  snapType: 2
   snapDuration: 0
-  applyScalingOnSnap: 1
+  applyScalingOnSnap: 0
   cloneNewOnUnsnap: 0
-  highlightColor: {r: 0.35294116, g: 0.4213996, b: 0.75, a: 0}
-  highlightAlwaysActive: 1
+  highlightColor: {r: 0.28081748, g: 0.36678204, b: 0.7794118, a: 0}
+  highlightAlwaysActive: 0
   validObjectListPolicy: {fileID: 626148831}
   displayDropZoneInEditor: 1
   defaultSnappedObject: {fileID: 0}
@@ -13325,6 +13326,17 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &626148836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 626148829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82127f88e35cb44c2911ebff250cdb19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &629706220
 GameObject:
   m_ObjectHideFlags: 0
@@ -17395,15 +17407,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4729411921798518, guid: 126ca0520a1701148905a58301713b9e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.043
+      value: 0.71400005
       objectReference: {fileID: 0}
     - target: {fileID: 4729411921798518, guid: 126ca0520a1701148905a58301713b9e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.6
+      value: 1.173
       objectReference: {fileID: 0}
     - target: {fileID: 4729411921798518, guid: 126ca0520a1701148905a58301713b9e, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.667
+      value: 0.7000001
       objectReference: {fileID: 0}
     - target: {fileID: 4729411921798518, guid: 126ca0520a1701148905a58301713b9e, type: 2}
       propertyPath: m_LocalRotation.x
@@ -17497,6 +17509,29 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   usingState: 0
+--- !u!114 &837886328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 837886320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc2315305343a584e8758755b54117c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clipOnTouch: {fileID: 0}
+  strengthOnTouch: 0
+  durationOnTouch: 0
+  intervalOnTouch: 0.05
+  clipOnGrab: {fileID: 0}
+  strengthOnGrab: 0.351
+  durationOnGrab: 1
+  intervalOnGrab: 0.05
+  clipOnUse: {fileID: 0}
+  strengthOnUse: 0
+  durationOnUse: 0
+  intervalOnUse: 0.05
 --- !u!1 &852315106
 GameObject:
   m_ObjectHideFlags: 0
@@ -20742,6 +20777,7 @@ GameObject:
   - component: {fileID: 1053997218}
   - component: {fileID: 1053997217}
   - component: {fileID: 1053997216}
+  - component: {fileID: 1053997219}
   m_Layer: 0
   m_Name: LeftController
   m_TagString: Untagged
@@ -20840,6 +20876,29 @@ MonoBehaviour:
   uiClickPressed: 0
   menuPressed: 0
   controllerVisible: 1
+--- !u!114 &1053997219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1053997214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc2315305343a584e8758755b54117c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clipOnTouch: {fileID: 0}
+  strengthOnTouch: 0
+  durationOnTouch: 0
+  intervalOnTouch: 0.05
+  clipOnGrab: {fileID: 0}
+  strengthOnGrab: 0.3
+  durationOnGrab: 0.5
+  intervalOnGrab: 0.05
+  clipOnUse: {fileID: 0}
+  strengthOnUse: 0
+  durationOnUse: 0
+  intervalOnUse: 0.05
 --- !u!4 &1056253123
 Transform:
   m_ObjectHideFlags: 0
@@ -24157,7 +24216,7 @@ MonoBehaviour:
   throwMultiplier: 1
   onGrabCollisionDelay: 0
   destroyImmediatelyOnThrow: 1
-  breakForce: 1e+28
+  breakForce: 1500
 --- !u!1 &1235963184
 GameObject:
   m_ObjectHideFlags: 0
@@ -28824,6 +28883,7 @@ GameObject:
   - component: {fileID: 1468413699}
   - component: {fileID: 1468413698}
   - component: {fileID: 1468413697}
+  - component: {fileID: 1468413701}
   m_Layer: 0
   m_Name: RightController
   m_TagString: Untagged
@@ -28923,6 +28983,29 @@ Transform:
   m_Father: {fileID: 1584948912}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1468413701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1468413696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc2315305343a584e8758755b54117c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clipOnTouch: {fileID: 0}
+  strengthOnTouch: 0
+  durationOnTouch: 0
+  intervalOnTouch: 0.05
+  clipOnGrab: {fileID: 0}
+  strengthOnGrab: 0.3
+  durationOnGrab: 0.5
+  intervalOnGrab: 0.05
+  clipOnUse: {fileID: 0}
+  strengthOnUse: 0
+  durationOnUse: 0
+  intervalOnUse: 0.05
 --- !u!1 &1468682737
 GameObject:
   m_ObjectHideFlags: 0
@@ -29294,11 +29377,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1479072999}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.53, y: 0.782, z: 0}
+  m_LocalPosition: {x: -2.5, y: 0.8, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1479659904
 GameObject:
@@ -32416,12 +32499,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1598550070}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.22, y: 0.6865, z: 0.2217}
+  m_LocalPosition: {x: -2.5, y: 0.7, z: 0.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1975854786}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1598550072
 MonoBehaviour:
@@ -36361,7 +36444,7 @@ MonoBehaviour:
   throwMultiplier: 1
   onGrabCollisionDelay: 0
   destroyImmediatelyOnThrow: 1
-  breakForce: 1e+24
+  breakForce: 1500
 --- !u!1 &1795286698
 GameObject:
   m_ObjectHideFlags: 0
