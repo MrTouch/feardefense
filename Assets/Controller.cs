@@ -18,10 +18,18 @@ public class Controller : MonoBehaviour {
 
     public void OnTriggerStay(Collider other)
     {
+
+        Rigidbody rb = other.GetComponent<Rigidbody>();
         if (other.gameObject.CompareTag("Tower") && controller.triggerPressed)
         {
-            this.transform.SetParent(other.transform);
+            other.transform.SetParent(this.transform);
+            rb.isKinematic = true;
             Debug.Log("touched");
+        }
+        else if(!controller.triggerPressed)
+        {
+            other.transform.parent = null;
+            rb.isKinematic = false;
         }
 
     }
