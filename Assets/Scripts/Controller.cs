@@ -5,6 +5,7 @@ using UnityEngine;
 public class Controller : MonoBehaviour {
 
     private SteamVR_TrackedController controller;
+    private SteamVR_Controller.Device device;
 
 	// Use this for initialization
 	void Start () {
@@ -22,6 +23,8 @@ public class Controller : MonoBehaviour {
         Rigidbody rb = other.GetComponent<Rigidbody>();
         if (other.gameObject.CompareTag("Tower") && controller.triggerPressed)
         {
+            device = SteamVR_Controller.Input((int)controller.controllerIndex);
+            device.TriggerHapticPulse(500);
             other.transform.SetParent(this.transform);
             rb.isKinematic = true;
             Debug.Log("touched");
