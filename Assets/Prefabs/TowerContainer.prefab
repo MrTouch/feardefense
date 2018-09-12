@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 114580239501212082}
   - component: {fileID: 114782074570768760}
   - component: {fileID: 114047378372963658}
+  - component: {fileID: 114667122113483704}
   m_Layer: 0
   m_Name: SnapDropZone
   m_TagString: Untagged
@@ -370,13 +371,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa31935730602684ca098655260a7c33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightObjectPrefab: {fileID: 0}
+  highlightObjectPrefab: {fileID: 1896574149954520, guid: 126ca0520a1701148905a58301713b9e,
+    type: 2}
   snapType: 0
   snapDuration: 0
   applyScalingOnSnap: 1
   cloneNewOnUnsnap: 0
-  highlightColor: {r: 0.35294116, g: 0.4213996, b: 0.75, a: 0}
-  highlightAlwaysActive: 1
+  highlightColor: {r: 1, g: 0, b: 0.972549, a: 0.7058824}
+  highlightAlwaysActive: 0
   validObjectListPolicy: {fileID: 114580239501212082}
   displayDropZoneInEditor: 1
   defaultSnappedObject: {fileID: 0}
@@ -395,6 +397,21 @@ MonoBehaviour:
   checkType: 1
   identifiers:
   - Tower
+--- !u!114 &114667122113483704
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1983967449416846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc366c4ab9b63a4dad97fc1290dc00a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  unhighlightOnDisable: 1
+  emissionDarken: 50
+  customMaterial: {fileID: 2100000, guid: 73ff44e6ae4e44377b0a825aa576cd82, type: 2}
 --- !u!114 &114782074570768760
 MonoBehaviour:
   m_ObjectHideFlags: 1
