@@ -9,7 +9,7 @@ public class ConnectTower : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        GetComponent<VRTK_SnapDropZone>().ObjectSnappedToDropZone += Handle_ObjectSnappedToDropZone; 
+        GetComponent<VRTK_SnapDropZone>().ObjectSnappedToDropZone += Handle_ObjectSnappedToDropZone;
     }
 
     void Handle_ObjectSnappedToDropZone(object sender, SnapDropZoneEventArgs e)
@@ -24,11 +24,8 @@ public class ConnectTower : MonoBehaviour {
         //this.gameObject.transform.localScale.Scale(new Vector3(0.3f , 0.3f, 0.3f));
         Debug.Log("added Fixed Joint");
     }
-
-
-	
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update () {
 		
 	} 
 

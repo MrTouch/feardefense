@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using VRTK;
 using UnityEngine;
 
 public class Tower : MonoBehaviour {
@@ -15,11 +16,12 @@ public class Tower : MonoBehaviour {
     public float fireCooldown = 0.8f;
     float fireCooldownLeft = 0;
 
+    public bool isPlacedOnPlayfield = false;
+
 
 	// Use this for initialization
 	void Start () {
         turretTransform = transform.Find("Turret");
-
     }
 	
 	// Update is called once per frame
@@ -52,8 +54,8 @@ public class Tower : MonoBehaviour {
             //turretTransform.rotation = Quaternion.Euler(0, lookRot.eulerAngles.y, 0);
 
             fireCooldownLeft -= Time.deltaTime;
-            Debug.Log("firecooldownleft: " + fireCooldownLeft);
-            if (fireCooldownLeft <= 0 && dir.magnitude <= range)
+            //Debug.Log("firecooldownleft: " + fireCooldownLeft);
+            if (fireCooldownLeft <= 0 && dir.magnitude <= range && isPlacedOnPlayfield)
             {
                 fireCooldownLeft = fireCooldown;
                 ShootAt(nearestEnemy);
@@ -66,5 +68,15 @@ public class Tower : MonoBehaviour {
         GameObject bulletGo = (GameObject)Instantiate(bulletPrefab, this.transform.position, this.transform.rotation);
         Bullet b = bulletGo.GetComponent<Bullet>();
         b.target = e.transform;
+    }
+
+    public void setTurretOnPlayfield()
+    {
+        isPlacedOnPlayfield = true;
+    }
+
+    public void removeTurretFromPlayfield()
+    {
+        isPlacedOnPlayfield = false;
     }
 }

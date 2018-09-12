@@ -34,7 +34,8 @@ public class Bullet : MonoBehaviour {
     void DoBulletHit()
     {
         //what if it's an exploding bullet with an area of effect?
-        gameObject.GetComponent<Enemy>().TakeDamage(damage);
+        Debug.Log("bullet hit enemy");  
+        target.GetComponent<Enemy>().TakeDamage(damage);
         Destroy(gameObject);
     }
 }
