@@ -20543,6 +20543,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1be655c071e9224790405f1568a548f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1022760586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1022760588}
+  - component: {fileID: 1022760587}
+  m_Layer: 0
+  m_Name: _Scripts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1022760587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1022760586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e7d564cba89206489a32e547ac84189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lives: 20
+  money: 100
+--- !u!4 &1022760588
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1022760586}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1025381023
 GameObject:
   m_ObjectHideFlags: 0
@@ -24531,6 +24573,7 @@ GameObject:
   - component: {fileID: 1182358918}
   - component: {fileID: 1182358917}
   - component: {fileID: 1182358916}
+  - component: {fileID: 1182358919}
   m_Layer: 0
   m_Name: SnapDropZone
   m_TagString: Untagged
@@ -24604,6 +24647,17 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1182358919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1182358914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd443487a933b43928e10781fa0a33a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1189704458
 GameObject:
   m_ObjectHideFlags: 0
