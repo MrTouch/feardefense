@@ -10,6 +10,8 @@ public class Tower : MonoBehaviour {
 
     public GameObject bulletPrefab;
 
+    public float damage = 1f;
+
     public float fireCooldown = 0.8f;
     float fireCooldownLeft = 0;
 
@@ -51,7 +53,7 @@ public class Tower : MonoBehaviour {
 
             fireCooldownLeft -= Time.deltaTime;
             Debug.Log("firecooldownleft: " + fireCooldownLeft);
-            if (fireCooldownLeft <= 0)
+            if (fireCooldownLeft <= 0 && dir.magnitude <= range)
             {
                 fireCooldownLeft = fireCooldown;
                 ShootAt(nearestEnemy);
