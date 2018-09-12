@@ -6,6 +6,7 @@ public class Bullet : MonoBehaviour {
 
     public float speed = 1f;
     public Transform target;
+    public float damage = 1f;
 	// Use this for initialization
 	void Start () {
 		
@@ -32,6 +33,8 @@ public class Bullet : MonoBehaviour {
 
     void DoBulletHit()
     {
+        //what if it's an exploding bullet with an area of effect?
+        gameObject.GetComponent<Enemy>().TakeDamage(damage);
         Destroy(gameObject);
     }
 }
