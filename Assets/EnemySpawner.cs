@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour {
 
-    float spawnCD = 0.4f;
+    float spawnCD = 0.8f;
     float spawnCDRemaining = 0;
 
     [System.Serializable]
@@ -38,8 +38,8 @@ public class EnemySpawner : MonoBehaviour {
                 if(wc.spawned < wc.num)
                 {
                     wc.spawned++;
-           
-                    Instantiate(wc.enemyPrefab, this.transform.position, this.transform.rotation);
+                    
+                   Instantiate(wc.enemyPrefab, this.transform.position, this.transform.rotation).transform.Rotate(0,90f,0);
                     //spawn
                     didSpawn = true;
                     break;
