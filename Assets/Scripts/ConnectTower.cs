@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ConnectTower : MonoBehaviour {
 
-    public GameObject snapDropZonePrefab;
+
 
     // Use this for initialization
     void Start () {
@@ -14,21 +14,15 @@ public class ConnectTower : MonoBehaviour {
 
     void Handle_ObjectSnappedToDropZone(object sender, SnapDropZoneEventArgs e)
     {
+        //this.gameObject.AddComponent<FixedJoint>();
         Transform tower = gameObject.transform.parent;
-
-
-        e.snappedObject.transform.localScale = new Vector3(1f, 1f, 1f);
-        //e.snappedObject.transform.localScale = tower.transform.localScale;
-        //e.snappedObject.transform.parent = tower.transform;
         Debug.Log(tower.transform.localScale);
+        e.snappedObject.transform.localScale = new Vector3(1f, 1f, 1f);
         Debug.Log(e.snappedObject.transform.localScale);
         //Destroy(e.snappedObject.GetComponent<Rigidbody>());
-        e.snappedObject.GetComponent<Collider>().enabled = false;
-
-        GameObject newDropZone = Instantiate(snapDropZonePrefab, tower , false);
-        newDropZone.transform.localPosition.Set(newDropZone.transform.localPosition.x, newDropZone.transform.localPosition.y + 2, newDropZone.transform.localPosition.z);
-        newDropZone.transform.parent = tower.transform;
-        Debug.Log("Snaped");
+        e.snappedObject.GetComponent<Collider>().enabled = true;
+        //this.gameObject.transform.localScale.Scale(new Vector3(0.3f , 0.3f, 0.3f));
+        Debug.Log("added Fixed Joint");
     }
 
 
