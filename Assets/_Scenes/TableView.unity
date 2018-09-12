@@ -8373,22 +8373,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1be655c071e9224790405f1568a548f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &391351178 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1983967449416846, guid: 3cd8fe10f9759194dbe2909fbbbb850e,
-    type: 2}
-  m_PrefabInternal: {fileID: 1988131338}
---- !u!114 &391351184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 391351178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a9f19964bcbafc44b2789b161b7b198, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &396833190
 GameObject:
   m_ObjectHideFlags: 0
@@ -31803,15 +31787,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1162033983522322, guid: 3cd8fe10f9759194dbe2909fbbbb850e, type: 2}
-      propertyPath: m_Name
-      value: TowerContainer (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 114371146486741816, guid: 3cd8fe10f9759194dbe2909fbbbb850e,
         type: 2}
       propertyPath: highlightObjectPrefab
       value: 
       objectReference: {fileID: 837886320}
+    - target: {fileID: 1162033983522322, guid: 3cd8fe10f9759194dbe2909fbbbb850e, type: 2}
+      propertyPath: m_Name
+      value: TowerContainer (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3cd8fe10f9759194dbe2909fbbbb850e, type: 2}
   m_IsPrefabParent: 0
@@ -42932,11 +42916,8 @@ Prefab:
       propertyPath: highlightObjectPrefab
       value: 
       objectReference: {fileID: 837886320}
-    - target: {fileID: 0}
-      propertyPath: operation
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114047378372963658, guid: 3cd8fe10f9759194dbe2909fbbbb850e, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 3cd8fe10f9759194dbe2909fbbbb850e, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1988131339 stripped
