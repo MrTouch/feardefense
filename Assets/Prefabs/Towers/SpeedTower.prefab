@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 114729374442502976}
   m_Layer: 0
   m_Name: SpeedTower
-  m_TagString: Tower
+  m_TagString: Speed Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -208,7 +208,7 @@ Transform:
   m_GameObject: {fileID: 1979151543903348}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.4}
-  m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 0.2}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children:
   - {fileID: 4551874266446172}
   - {fileID: 4603562149718072}
@@ -733,7 +733,6 @@ MonoBehaviour:
   checkType: 1
   identifiers:
   - Tower
-  - Basic Tower
 --- !u!114 &114670843205575020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -817,7 +816,7 @@ MonoBehaviour:
   holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
-  grabOverrideButton: 0
+  grabOverrideButton: 3
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114933339333622698}
   secondaryGrabActionScript: {fileID: 114670843205575020}

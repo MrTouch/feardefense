@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Tower
   - Basic Tower
+  - Speed Tower
+  - Range Tower
+  - Damage Tower
   layers:
   - Default
   - TransparentFX

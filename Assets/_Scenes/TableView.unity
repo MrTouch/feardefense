@@ -4528,6 +4528,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1086063921}
     m_Modifications:
+    - target: {fileID: 114591871064186434, guid: 68ad181338cd91a4b96aac1912ad4ed5,
+        type: 2}
+      propertyPath: identifiers.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4276708578382792, guid: 68ad181338cd91a4b96aac1912ad4ed5, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4565,27 +4570,20 @@ Prefab:
       propertyPath: highlightObjectPrefab
       value: 
       objectReference: {fileID: 837886320}
-    - target: {fileID: 4276708578382792, guid: 68ad181338cd91a4b96aac1912ad4ed5, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4276708578382792, guid: 68ad181338cd91a4b96aac1912ad4ed5, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4276708578382792, guid: 68ad181338cd91a4b96aac1912ad4ed5, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 114933339333622698, guid: 68ad181338cd91a4b96aac1912ad4ed5,
+    - target: {fileID: 114591871064186434, guid: 68ad181338cd91a4b96aac1912ad4ed5,
         type: 2}
-      propertyPath: precisionGrab
-      value: 0
+      propertyPath: identifiers.Array.data[1]
+      value: Range Tower
       objectReference: {fileID: 0}
-    - target: {fileID: 114953657456864144, guid: 68ad181338cd91a4b96aac1912ad4ed5,
+    - target: {fileID: 114591871064186434, guid: 68ad181338cd91a4b96aac1912ad4ed5,
         type: 2}
-      propertyPath: grabOverrideButton
-      value: 3
+      propertyPath: identifiers.Array.data[2]
+      value: Damage Tower
+      objectReference: {fileID: 0}
+    - target: {fileID: 114591871064186434, guid: 68ad181338cd91a4b96aac1912ad4ed5,
+        type: 2}
+      propertyPath: identifiers.Array.data[0]
+      value: Speed Tower
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 68ad181338cd91a4b96aac1912ad4ed5, type: 2}
@@ -8722,6 +8720,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1086063921}
     m_Modifications:
+    - target: {fileID: 114188754180464308, guid: 126ca0520a1701148905a58301713b9e,
+        type: 2}
+      propertyPath: identifiers.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4729411921798518, guid: 126ca0520a1701148905a58301713b9e, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -8754,27 +8757,20 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4729411921798518, guid: 126ca0520a1701148905a58301713b9e, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4729411921798518, guid: 126ca0520a1701148905a58301713b9e, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4729411921798518, guid: 126ca0520a1701148905a58301713b9e, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 114879111240372488, guid: 126ca0520a1701148905a58301713b9e,
+    - target: {fileID: 114188754180464308, guid: 126ca0520a1701148905a58301713b9e,
         type: 2}
-      propertyPath: precisionGrab
-      value: 0
+      propertyPath: identifiers.Array.data[0]
+      value: Speed Tower
       objectReference: {fileID: 0}
-    - target: {fileID: 114876570496157682, guid: 126ca0520a1701148905a58301713b9e,
+    - target: {fileID: 114188754180464308, guid: 126ca0520a1701148905a58301713b9e,
         type: 2}
-      propertyPath: grabOverrideButton
-      value: 3
+      propertyPath: identifiers.Array.data[1]
+      value: Range Tower
+      objectReference: {fileID: 0}
+    - target: {fileID: 114188754180464308, guid: 126ca0520a1701148905a58301713b9e,
+        type: 2}
+      propertyPath: identifiers.Array.data[2]
+      value: Damage Tower
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 126ca0520a1701148905a58301713b9e, type: 2}
@@ -9891,6 +9887,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1086063921}
     m_Modifications:
+    - target: {fileID: 114795000229517902, guid: 9bdd000e9cff44046bf512e9df4447d7,
+        type: 2}
+      propertyPath: identifiers.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4307747781057076, guid: 9bdd000e9cff44046bf512e9df4447d7, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -9928,27 +9929,20 @@ Prefab:
       propertyPath: highlightObjectPrefab
       value: 
       objectReference: {fileID: 837886320}
-    - target: {fileID: 4307747781057076, guid: 9bdd000e9cff44046bf512e9df4447d7, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307747781057076, guid: 9bdd000e9cff44046bf512e9df4447d7, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307747781057076, guid: 9bdd000e9cff44046bf512e9df4447d7, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 114388407284870694, guid: 9bdd000e9cff44046bf512e9df4447d7,
+    - target: {fileID: 114795000229517902, guid: 9bdd000e9cff44046bf512e9df4447d7,
         type: 2}
-      propertyPath: grabOverrideButton
-      value: 3
+      propertyPath: identifiers.Array.data[1]
+      value: Range Tower
       objectReference: {fileID: 0}
-    - target: {fileID: 114521812491594262, guid: 9bdd000e9cff44046bf512e9df4447d7,
+    - target: {fileID: 114795000229517902, guid: 9bdd000e9cff44046bf512e9df4447d7,
         type: 2}
-      propertyPath: precisionGrab
-      value: 0
+      propertyPath: identifiers.Array.data[2]
+      value: Damage Tower
+      objectReference: {fileID: 0}
+    - target: {fileID: 114795000229517902, guid: 9bdd000e9cff44046bf512e9df4447d7,
+        type: 2}
+      propertyPath: identifiers.Array.data[0]
+      value: Speed Tower
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9bdd000e9cff44046bf512e9df4447d7, type: 2}
@@ -11090,7 +11084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7d564cba89206489a32e547ac84189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 20
+  lives: 100000000
   money: 100
 --- !u!4 &1022760588
 Transform:
@@ -11452,7 +11446,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1045888900
 Transform:
   m_ObjectHideFlags: 0
@@ -11617,6 +11611,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1086063921}
     m_Modifications:
+    - target: {fileID: 114211537945692644, guid: 6cd84126710eef94baad14d9a8685a3e,
+        type: 2}
+      propertyPath: identifiers.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4499864218910422, guid: 6cd84126710eef94baad14d9a8685a3e, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -11654,27 +11653,20 @@ Prefab:
       propertyPath: highlightObjectPrefab
       value: 
       objectReference: {fileID: 837886320}
-    - target: {fileID: 4499864218910422, guid: 6cd84126710eef94baad14d9a8685a3e, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4499864218910422, guid: 6cd84126710eef94baad14d9a8685a3e, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4499864218910422, guid: 6cd84126710eef94baad14d9a8685a3e, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 114476331871635990, guid: 6cd84126710eef94baad14d9a8685a3e,
+    - target: {fileID: 114211537945692644, guid: 6cd84126710eef94baad14d9a8685a3e,
         type: 2}
-      propertyPath: grabOverrideButton
-      value: 3
+      propertyPath: identifiers.Array.data[1]
+      value: Range Tower
       objectReference: {fileID: 0}
-    - target: {fileID: 114977570667379992, guid: 6cd84126710eef94baad14d9a8685a3e,
+    - target: {fileID: 114211537945692644, guid: 6cd84126710eef94baad14d9a8685a3e,
         type: 2}
-      propertyPath: precisionGrab
-      value: 0
+      propertyPath: identifiers.Array.data[2]
+      value: Damage Tower
+      objectReference: {fileID: 0}
+    - target: {fileID: 114211537945692644, guid: 6cd84126710eef94baad14d9a8685a3e,
+        type: 2}
+      propertyPath: identifiers.Array.data[0]
+      value: Speed Tower
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6cd84126710eef94baad14d9a8685a3e, type: 2}

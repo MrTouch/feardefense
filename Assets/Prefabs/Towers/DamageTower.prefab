@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 114178418585900886}
   m_Layer: 0
   m_Name: DamageTower
-  m_TagString: Tower
+  m_TagString: Damage Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -193,7 +193,7 @@ Transform:
   m_GameObject: {fileID: 1797622781371236}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.8}
-  m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 0.2}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children:
   - {fileID: 4338367705294594}
   - {fileID: 4384173814188196}
@@ -739,7 +739,7 @@ MonoBehaviour:
   holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
-  grabOverrideButton: 0
+  grabOverrideButton: 3
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114521812491594262}
   secondaryGrabActionScript: {fileID: 114754997791594596}
