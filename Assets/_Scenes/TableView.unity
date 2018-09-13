@@ -5631,7 +5631,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f7cd62d595c763c428123f260c78b711, type: 2}
+  - {fileID: 2100000, guid: 2a18a62d3e1334e0c9171cacf326dc14, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14706,6 +14706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6720506e9361a741944241f8f09c8fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnemySpawner: {fileID: 0}
 --- !u!1 &1331715962
 GameObject:
   m_ObjectHideFlags: 0
