@@ -8772,6 +8772,21 @@ Prefab:
       propertyPath: identifiers.Array.data[2]
       value: Damage Tower
       objectReference: {fileID: 0}
+    - target: {fileID: 114649958916436114, guid: 126ca0520a1701148905a58301713b9e,
+        type: 2}
+      propertyPath: affectDamagePerTower
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114649958916436114, guid: 126ca0520a1701148905a58301713b9e,
+        type: 2}
+      propertyPath: affectFireCoolDownPerTower
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114649958916436114, guid: 126ca0520a1701148905a58301713b9e,
+        type: 2}
+      propertyPath: affectRangePerTower
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 126ca0520a1701148905a58301713b9e, type: 2}
   m_IsPrefabParent: 0

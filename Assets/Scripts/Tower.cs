@@ -26,6 +26,10 @@ public class Tower : MonoBehaviour {
     float initialSpeed;
     float initialRange;
 
+    public float affectDamagePerTower;
+    public float affectFireCoolDownPerTower;
+    public float affectRangePerTower;
+
     // Use this for initialization
     void Start () {
         turretTransform = transform.Find("Turret");
@@ -45,9 +49,9 @@ public class Tower : MonoBehaviour {
 
         TowersSnapped(this.gameObject);
 
-        damage += countDamageTowers * 0.1f;
-        range += countRangeTowers * 0.1f;
-        fireCooldown -= countSpeedTowers * 0.1f;
+        damage += countDamageTowers * affectDamagePerTower;
+        range += countRangeTowers * affectRangePerTower;
+        fireCooldown -= countSpeedTowers * affectFireCoolDownPerTower;
 
         Debug.Log("Speed Tower: " + countSpeedTowers + " Speed: " + fireCooldown);
         Debug.Log("Range Tower: " + countRangeTowers + " Range: " + range);
