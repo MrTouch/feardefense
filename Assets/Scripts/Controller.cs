@@ -41,12 +41,9 @@ public class Controller : MonoBehaviour {
         }
     }
 
-    private void triggerHaptic()
+    public void triggerHaptic()
     {
-        if(!firstHaptic)
-        {
             device.TriggerHapticPulse(3000);
             firstHaptic = true;
-        }
     }
 }
