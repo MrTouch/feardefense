@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour {
 
     float spawnCD = 0.9f;
-    float spawnCDRemaining = 5;
+    float spawnCDRemaining = 20;
 
     int waveCounter = 0;
     bool manualWave = false;
