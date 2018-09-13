@@ -7,7 +7,7 @@ public class Tower : MonoBehaviour {
 
     Transform turretTransform;
 
-    float range = 1f;
+    float range = 0.5f;
 
     public GameObject bulletPrefab;
 
@@ -18,14 +18,41 @@ public class Tower : MonoBehaviour {
 
     public bool isPlacedOnPlayfield = false;
 
+    private int countSpeedTowers;
+    private int countRangeTowers;
+    private int countDamageTowers;
 
-	// Use this for initialization
-	void Start () {
+    float initialDamage;
+    float initialSpeed;
+    float initialRange;
+
+    // Use this for initialization
+    void Start () {
         turretTransform = transform.Find("Turret");
+        initialDamage = damage;
+        initialSpeed = fireCooldown;
+        initialRange = range;
     }
-	
+
 	// Update is called once per frame
 	void Update () {
+        countSpeedTowers = 0;
+        countRangeTowers = 0;
+        countDamageTowers = 0;
+        damage = initialDamage;
+        range = initialRange;
+        fireCooldown = initialSpeed;
+
+        TowersSnapped(this.gameObject);
+
+        damage += countDamageTowers * 0.1f;
+        range += countRangeTowers * 0.1f;
+        fireCooldown -= countSpeedTowers * 0.1f;
+
+        Debug.Log("Speed Tower: " + countSpeedTowers + " Speed: " + fireCooldown);
+        Debug.Log("Range Tower: " + countRangeTowers + " Range: " + range);
+        Debug.Log("Damage Tower: " + countDamageTowers + " Damage: " + damage);
+
         Enemy[] enemies = GameObject.FindObjectsOfType<Enemy>();
 
         Enemy nearestEnemy = null;
@@ -77,5 +104,34 @@ public class Tower : MonoBehaviour {
     public void removeTurretFromPlayfield()
     {
         isPlacedOnPlayfield = false;
+    }
+
+    private void TowersSnapped(GameObject tower)
+    {
+        Transform snapdropzone = tower.transform.GetChild(0);
+
+        foreach (Transform child in snapdropzone)
+        {
+            if (child.CompareTag("Speed Tower"))
+            {
+                Debug.Log("Found Speed Tower");
+                countSpeedTowers += 1;
+                TowersSnapped(child.gameObject);
+            }
+            else if (child.CompareTag("Range Tower"))
+            {
+                Debug.Log("Found Range Tower");
+                countRangeTowers += 1;
+                TowersSnapped(child.gameObject);
+            }
+            else if (child.CompareTag("Damage Tower"))
+            {
+                Debug.Log("Found Damage Tower");
+                countDamageTowers += 1;
+                TowersSnapped(child.gameObject);
+            }
+        }
+
+
     }
 }

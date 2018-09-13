@@ -61,7 +61,7 @@ GameObject:
   - component: {fileID: 114834008867365278}
   m_Layer: 0
   m_Name: RangeTower
-  m_TagString: Tower
+  m_TagString: Range Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -220,7 +220,7 @@ Transform:
   m_GameObject: {fileID: 1348468420036812}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.4}
-  m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 0.2}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children:
   - {fileID: 4100319926678308}
   - {fileID: 4864070352368044}
@@ -697,7 +697,6 @@ MonoBehaviour:
   checkType: 1
   identifiers:
   - Tower
-  - Basic Tower
 --- !u!114 &114243384304441776
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -728,7 +727,7 @@ MonoBehaviour:
   holdButtonToGrab: 1
   stayGrabbedOnTeleport: 1
   validDrop: 1
-  grabOverrideButton: 0
+  grabOverrideButton: 3
   allowedGrabControllers: 0
   grabAttachMechanicScript: {fileID: 114977570667379992}
   secondaryGrabActionScript: {fileID: 114834008867365278}
