@@ -118,19 +118,19 @@ public class Tower : MonoBehaviour {
         {
             if (child.CompareTag("Speed Tower"))
             {
-                Debug.Log("Found Speed Tower");
+                //Debug.Log("Found Speed Tower");
                 countSpeedTowers += 1;
                 TowersSnapped(child.gameObject);
             }
             else if (child.CompareTag("Range Tower"))
             {
-                Debug.Log("Found Range Tower");
+                //Debug.Log("Found Range Tower");
                 countRangeTowers += 1;
                 TowersSnapped(child.gameObject);
             }
             else if (child.CompareTag("Damage Tower"))
             {
-                Debug.Log("Found Damage Tower");
+                //Debug.Log("Found Damage Tower");
                 countDamageTowers += 1;
                 TowersSnapped(child.gameObject);
             }

@@ -5,11 +5,12 @@ using UnityEngine;
 
 public class ConnectTower : MonoBehaviour {
 
-
+    AudioSource audioSource;
 
     // Use this for initialization
     void Start () {
         GetComponent<VRTK_SnapDropZone>().ObjectSnappedToDropZone += Handle_ObjectSnappedToDropZone;
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Handle_ObjectSnappedToDropZone(object sender, SnapDropZoneEventArgs e)
@@ -22,7 +23,8 @@ public class ConnectTower : MonoBehaviour {
         //Destroy(e.snappedObject.GetComponent<Rigidbody>());
         e.snappedObject.GetComponent<Collider>().enabled = true;
         //this.gameObject.transform.localScale.Scale(new Vector3(0.3f , 0.3f, 0.3f));
-        Debug.Log("added Fixed Joint");
+        audioSource.Play();
+        Debug.Log("Tower snapped");
     }
     // Update is called once per frame
     void Update () {

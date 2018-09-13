@@ -5,11 +5,13 @@ using UnityEngine;
 
 public class TurretActions : MonoBehaviour {
 
-	// Use this for initialization
-	void Start ()
+    AudioSource audioSource;
+    // Use this for initialization
+    void Start ()
     {
         GetComponent<VRTK_SnapDropZone>().ObjectSnappedToDropZone += Handle_ObjectSnappedToDropZone;
         GetComponent<VRTK_SnapDropZone>().ObjectUnsnappedFromDropZone += Handle_ObjectUnsnappedFromDropZone;
+        audioSource = GetComponent<AudioSource>();
 
     }
 	
@@ -21,6 +23,8 @@ public class TurretActions : MonoBehaviour {
     {
 
         e.snappedObject.GetComponent<Tower>().setTurretOnPlayfield();
+        audioSource.Play();
+
     }
     void Handle_ObjectUnsnappedFromDropZone(object sender, SnapDropZoneEventArgs e)
     {
