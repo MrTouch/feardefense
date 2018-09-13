@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour {
 
-    float spawnCD = 0.8f;
+    float spawnCD = 0.9f;
     float spawnCDRemaining = 20;
 
     [System.Serializable]
@@ -64,5 +64,13 @@ public class EnemySpawner : MonoBehaviour {
             }
         }
 
+    }
+
+    public void nextWave()
+    {
+        if (transform.parent.childCount > 1)
+        {
+            transform.parent.GetChild(1).gameObject.SetActive(true);
+        }
     }
 }
