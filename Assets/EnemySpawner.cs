@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour {
 
     float spawnCD = 0.8f;
-    float spawnCDRemaining = 0;
+    float spawnCDRemaining = 15;
 
     [System.Serializable]
     public class WaveComponent
@@ -35,7 +35,7 @@ public class EnemySpawner : MonoBehaviour {
 
             foreach(WaveComponent wc in waveCamps)
             {
-                if(wc.spawned < wc.num)
+                if (wc.spawned < wc.num)
                 {
                     wc.spawned++;
                     
@@ -56,7 +56,9 @@ public class EnemySpawner : MonoBehaviour {
                 else
                 {
                     //inactivate Wave and make harder for next round.
-                    Destroy(gameObject);
+                    transform.parent.GetChild(1).gameObject.SetActive(false);
+                    //Destroy(gameObject);
+                    //transform.parent.GetChild(0).gameObject.SetActive(false);
                 }
 
             }

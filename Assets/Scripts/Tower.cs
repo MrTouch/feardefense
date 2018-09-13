@@ -38,13 +38,12 @@ public class Tower : MonoBehaviour {
             {
                 nearestEnemy = e;
                 dist = d;
-                Debug.Log("enemy found");
-                Debug.Log(e);
+                //Debug.Log(e);
             }
 
             if(nearestEnemy == null)
             {
-                Debug.Log("noenemies?");
+               // Debug.Log("noenemies?");
             }
 
             Vector3 dir = nearestEnemy.transform.position - this.transform.position;
