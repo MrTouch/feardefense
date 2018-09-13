@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class NextWaveButton : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+
+    public GameObject EnemySpawner;
+    // Use this for initialization
+    void Start () {
 	}
 	
 	// Update is called once per frame
@@ -15,6 +17,7 @@ public class NextWaveButton : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         StartCoroutine(DelayButton());
+        EnemySpawner.GetComponent<EnemySpawner>().nextWave();
     }
 
     private IEnumerator DelayButton()
