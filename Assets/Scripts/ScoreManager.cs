@@ -10,6 +10,7 @@ public class ScoreManager : MonoBehaviour {
 
     public void LoseLife(float l = 1f)
     {
+        Debug.Log("loose life");
         lives -= l;
         if (lives <= 0)
         {

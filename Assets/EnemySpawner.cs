@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour {
 
     float spawnCD = 0.8f;
-    float spawnCDRemaining = 15;
+    float spawnCDRemaining = 20;
 
     [System.Serializable]
     public class WaveComponent
