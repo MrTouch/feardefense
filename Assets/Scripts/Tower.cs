@@ -53,9 +53,9 @@ public class Tower : MonoBehaviour {
         range += countRangeTowers * affectRangePerTower;
         fireCooldown -= countSpeedTowers * affectFireCoolDownPerTower;
 
-        Debug.Log("Speed Tower: " + countSpeedTowers + " Speed: " + fireCooldown);
-        Debug.Log("Range Tower: " + countRangeTowers + " Range: " + range);
-        Debug.Log("Damage Tower: " + countDamageTowers + " Damage: " + damage);
+        //Debug.Log("Speed Tower: " + countSpeedTowers + " Speed: " + fireCooldown);
+        //Debug.Log("Range Tower: " + countRangeTowers + " Range: " + range);
+        //Debug.Log("Damage Tower: " + countDamageTowers + " Damage: " + damage);
 
         Enemy[] enemies = GameObject.FindObjectsOfType<Enemy>();
 

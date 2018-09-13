@@ -5,7 +5,10 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour {
 
     float spawnCD = 0.9f;
-    float spawnCDRemaining = 20;
+    float spawnCDRemaining = 5;
+
+    int waveCounter = 0;
+    bool manualWave = false;
 
     [System.Serializable]
     public class WaveComponent
@@ -27,14 +30,19 @@ public class EnemySpawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //Debug.Log("anzahl waves: ");
+        //Debug.Log(transform.parent.childCount);
         bool didSpawn = false;
         spawnCDRemaining -= Time.deltaTime;
-        if(spawnCDRemaining < 0 )
+
+        if(spawnCDRemaining < 0 || manualWave)
         {
+            manualWave = false;
             spawnCDRemaining = spawnCD;
 
             foreach(WaveComponent wc in waveCamps)
             {
+                Debug.Log("spawned: " + wc.spawned);
                 if (wc.spawned < wc.num)
                 {
                     wc.spawned++;
@@ -47,18 +55,30 @@ public class EnemySpawner : MonoBehaviour {
             }
             if(didSpawn == false)
             {
+                foreach(WaveComponent wc in waveCamps)
+                {
+                    wc.spawned = 0;
+                }
                 // wave must be complete;
                 //instantiate next wave
-                if (transform.parent.childCount > 1)
+                if (waveCounter < transform.parent.childCount -1)
                 {
-                    transform.parent.GetChild(1).gameObject.SetActive(true);
+                    waveCounter++;
+                    transform.parent.GetChild(waveCounter - 1).gameObject.SetActive(false);
+                    Debug.Log("wave counter = " + waveCounter);
+                    if (waveCounter < transform.parent.childCount)
+                    {
+                        transform.parent.GetChild(waveCounter).gameObject.SetActive(true);
+                    }
+
                 }
                 else
                 {
-                    //inactivate Wave and make harder for next round.
-                    transform.parent.GetChild(1).gameObject.SetActive(false);
-                    //Destroy(gameObject);
-                    //transform.parent.GetChild(0).gameObject.SetActive(false);
+                    transform.parent.GetChild(waveCounter).gameObject.SetActive(false);
+                    Debug.Log("reset waves");
+                    //restart waves
+                    waveCounter = 0;
+                    transform.parent.GetChild(waveCounter).gameObject.SetActive(true);
                 }
 
             }
@@ -68,9 +88,6 @@ public class EnemySpawner : MonoBehaviour {
 
     public void nextWave()
     {
-        if (transform.parent.childCount > 1)
-        {
-            transform.parent.GetChild(1).gameObject.SetActive(true);
-        }
+        manualWave = true;
     }
 }
