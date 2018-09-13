@@ -353,6 +353,7 @@ MonoBehaviour:
   checkType: 1
   identifiers:
   - Tower
+  - Basic Tower
 --- !u!114 &114243384304441776
 MonoBehaviour:
   m_ObjectHideFlags: 1

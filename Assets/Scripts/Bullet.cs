@@ -14,20 +14,27 @@ public class Bullet : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Vector3 dir = target.position - this.transform.localPosition;
-
-        float distThisFrame = speed * Time.deltaTime;
-
-        if (dir.magnitude <= distThisFrame)
+        if (target)
         {
-            DoBulletHit();
+            Vector3 dir = target.position - this.transform.localPosition;
+
+            float distThisFrame = speed * Time.deltaTime;
+
+            if (dir.magnitude <= distThisFrame)
+            {
+                DoBulletHit();
+            }
+            else
+            {
+                //move towards node 
+                transform.Translate(dir.normalized * distThisFrame, Space.World);
+                Quaternion targetRotaton = Quaternion.LookRotation(dir);
+                this.transform.rotation = Quaternion.Lerp(this.transform.rotation, targetRotaton, Time.deltaTime * 5);
+            }
         }
         else
         {
-            //move towards node 
-            transform.Translate(dir.normalized * distThisFrame, Space.World);
-            Quaternion targetRotaton = Quaternion.LookRotation(dir);
-            this.transform.rotation = Quaternion.Lerp(this.transform.rotation, targetRotaton, Time.deltaTime * 5);
+            Destroy(gameObject);
         }
     }
 
