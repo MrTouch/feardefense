@@ -2022,6 +2022,7 @@ GameObject:
   - component: {fileID: 142960114}
   - component: {fileID: 142960113}
   - component: {fileID: 142960112}
+  - component: {fileID: 142960115}
   m_Layer: 0
   m_Name: LeftController
   m_TagString: Untagged
@@ -2054,7 +2055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grabButton: 7
-  grabPrecognition: 0
+  grabPrecognition: 5
   throwMultiplier: 1
   createRigidBodyWhenNotTouching: 0
   controllerAttachPoint: {fileID: 0}
@@ -2120,6 +2121,19 @@ MonoBehaviour:
   uiClickPressed: 0
   menuPressed: 0
   controllerVisible: 1
+--- !u!114 &142960115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 142960110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d0286875642e45a41f5e4f3bc1b2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PowerBallPrefab: {fileID: 1392675524309588, guid: 863fead4ab89ddf46b38bad03378f1ea,
+    type: 2}
 --- !u!1001 &164795450
 Prefab:
   m_ObjectHideFlags: 0
@@ -10790,7 +10804,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-112502
+  m_Name: pb_Mesh-418248
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -15466,6 +15480,7 @@ GameObject:
   - component: {fileID: 1451478664}
   - component: {fileID: 1451478663}
   - component: {fileID: 1451478662}
+  - component: {fileID: 1451478666}
   m_Layer: 0
   m_Name: RightController
   m_TagString: Untagged
@@ -15485,7 +15500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grabButton: 7
-  grabPrecognition: 0
+  grabPrecognition: 5
   throwMultiplier: 1
   createRigidBodyWhenNotTouching: 0
   controllerAttachPoint: {fileID: 0}
@@ -15565,6 +15580,19 @@ Transform:
   m_Father: {fileID: 130088116}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1451478666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1451478661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d0286875642e45a41f5e4f3bc1b2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PowerBallPrefab: {fileID: 1392675524309588, guid: d11abb81d2c7f4746a5f976b76123bb3,
+    type: 2}
 --- !u!1001 &1452090324
 Prefab:
   m_ObjectHideFlags: 0
@@ -17909,6 +17937,34 @@ Transform:
   m_PrefabParentObject: {fileID: 4286439291293718, guid: 3cd8fe10f9759194dbe2909fbbbb850e,
     type: 2}
   m_PrefabInternal: {fileID: 1636390065}
+--- !u!1 &1638731437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1638731438}
+  m_Layer: 0
+  m_Name: Magic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1638731438
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1638731437}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1639594638
 GameObject:
   m_ObjectHideFlags: 0
